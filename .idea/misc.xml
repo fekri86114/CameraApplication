@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Klap.ir/Documents/android/AndroidProject/CameraApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Klap.ir/Documents/android/AndroidProject/CameraApplication/app/src/main/res/drawable/ic_baseline_photo_camera_24.xml" value="0.148" />
+        <entry key="..\:/Users/Klap.ir/Documents/android/AndroidProject/CameraApplication/app/src/main/res/drawable/ic_circle_slice.xml" value="0.148" />
+        <entry key="..\:/Users/Klap.ir/Documents/android/AndroidProject/CameraApplication/app/src/main/res/drawable/ic_view_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/Klap.ir/Documents/android/AndroidProject/CameraApplication/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Klap.ir/Documents/android/AndroidProject/CameraApplication/app/src/main/res/xml/file_paths.xml" value="0.21770833333333334" />
       </map>
     </option>
   </component>
