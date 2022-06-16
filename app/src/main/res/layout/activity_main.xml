@@ -4,40 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#C9C4C4">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/imageviewLayout"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/displayImageViewCamera"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="640dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
+
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/ic_circle_slice"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="12dp">
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/photoImageView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_launcher_background" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/takePhotoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/imageviewLayout"
-        app:layout_constraintStart_toStartOf="parent"
+    <Button
+        android:id="@+id/galleryButton"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/ic_view_gallery"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"
-        android:text="@string/take_a_photo"
-        android:textStyle="bold"
-        android:background="@color/gray"/>
+        app:layout_constraintStart_toEndOf="@id/cameraButton" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
